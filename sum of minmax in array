@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int i,max=0,min;
+    int count=0;
+    printf("Length of Array : ");
+    scanf("%d",&i);
+    int a[i];
+    printf("Enter %d array Element : ");
+    for(int j=0;j<i;j++)
+    {
+        scanf("%d",&a[j]);
+    }
+    for(int k=0;k<i;k++)
+    {
+        if(max<=a[k])
+        {
+            max=a[k];
+        }
+        if(min>=a[k])
+        {
+            min=a[k];
+        }
+    }
+    printf("Sum of Min and Max : %d",max+min);
+    return 0;
+}
